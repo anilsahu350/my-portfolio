@@ -2,7 +2,8 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-  
+  "homepage": ".",
+
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -11,7 +12,6 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-parallax-tilt": "^1.7.298",
-    "react-router-dom": "^7.6.2",
     "react-scripts": "5.0.1",
     "react-simple-typewriter": "^5.0.1",
     "tailwindcss": "^3.4.1",
