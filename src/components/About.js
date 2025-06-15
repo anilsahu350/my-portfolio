@@ -5,7 +5,7 @@ import profileImage from '../assets/Anil_photo.jpeg';
 
 const About = () => {
   const [text] = useTypewriter({
-    words: ['DevOps Engineer', 'Cloud Learner'],
+    words: ['DevOps Enthusiast', 'Cloud Learner'],
     loop: 0, // Infinite loop
     delaySpeed: 2000,
   });
