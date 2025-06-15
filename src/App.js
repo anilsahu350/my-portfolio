@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <Router basename="/my-portfolio">
+    <Router>
       <Navbar />
       <Routes>
         {/* Redirect root path to /about */}
