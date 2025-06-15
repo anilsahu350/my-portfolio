@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  my-portfolio:
+    image: anilsahu350/my-portfolio:v1
+    container_name: my-portfolio
+    ports:
+      - "8080:80"
+    restart: always
+
