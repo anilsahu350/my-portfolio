@@ -1,9 +1,15 @@
 import React from 'react';
-import ReactTypingEffect from 'react-typing-effect';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import Tilt from 'react-parallax-tilt';
-import profileImage from '../../assets/Anil_photo.jpeg'; // Change this if you update your photo file
+import profileImage from '../assets/Anil_photo.jpeg';
 
 const About = () => {
+  const [text] = useTypewriter({
+    words: ['DevOps Engineer', 'Cloud Learner'],
+    loop: 0, // Infinite loop
+    delaySpeed: 2000,
+  });
+
   return (
     <section
       id="about"
@@ -23,19 +29,8 @@ const About = () => {
           {/* Typing Effect */}
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
             <span className="text-white">I am a </span>
-            <ReactTypingEffect
-              text={[
-                'DevOps Engineer',
-                'Cloud Learner',
-              ]}
-              speed={100}
-              eraseSpeed={50}
-              typingDelay={500}
-              eraseDelay={2000}
-              cursorRenderer={(cursor) => (
-                <span className="text-[#8245ec]">{cursor}</span>
-              )}
-            />
+            <span>{text}</span>
+            <Cursor cursorStyle="|" cursorColor="#8245ec" />
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mt-8 leading-relaxed">
