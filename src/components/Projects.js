@@ -3,16 +3,22 @@ import React from "react";
 const Projects = () => {
   const projectList = [
     {
-      title: "CI/CD Pipeline using Jenkins",
-      description: "Automated deployment pipeline with GitHub, Jenkins, Docker, and AWS EC2.",
+      title: "DevSecOps Banking Application on AWS",
+      description:
+        "Deployed a secure multi-tier banking app using Docker and Kubernetes on AWS EKS. Integrated CI/CD with Jenkins, performed security scanning using OWASP ZAP and Trivy, and used Terraform for infrastructure as code.",
+      link: "https://github.com/anilsahu350/DevOps-mega-project/tree/feature/devsecops",
     },
     {
-      title: "Kubernetes Monitoring with Prometheus & Grafana",
-      description: "Deployed and visualized Kubernetes metrics using Prometheus and Grafana dashboards.",
+      title: "Multi-Environment IaC Deployment",
+      description:
+        "Built reusable Terraform modules to provision infrastructure for multiple environments (dev, staging, prod). Added Terratest automation to validate deployments and catch config issues early.",
+      link: "https://github.com/anilsahu350/Multi-env-lac-project",
     },
     {
-      title: "Infrastructure as Code with Terraform",
-      description: "Provisioned AWS resources via Terraform scripts for scalable infrastructure.",
+      title: "DevSecOps Project – Zomato Clone Deployment",
+      description:
+        "Deployed Zomato clone using DevSecOps principles integrating CI/CD pipelines, container orchestration, and security scanning.",
+      link: "https://github.com/anilsahu350/DevOps-Project-Zomato/tree/dev",
     },
   ];
 
@@ -37,6 +43,14 @@ const Projects = () => {
           >
             <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
             <p className="text-gray-400">{project.description}</p>
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#8245ec] font-medium mt-2 inline-block hover:underline"
+            >
+              View on GitHub
+            </a>
           </div>
         ))}
       </div>
