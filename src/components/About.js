@@ -6,7 +6,7 @@ import profileImage from '../assets/Anil_photo.jpeg';
 const About = () => {
   const [text] = useTypewriter({
     words: ['DevOps Enthusiast', 'Cloud Learner'],
-    loop: 0, // Infinite loop
+    loop: 0,
     delaySpeed: 2000,
   });
 
@@ -24,7 +24,7 @@ const About = () => {
           </h1>
           {/* Name */}
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
-            Anil Sahu
+            Anil Kumar Sahu
           </h2>
           {/* Typing Effect */}
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
@@ -39,6 +39,50 @@ const About = () => {
             Passionate about automation and cloud technology, I’m eager to join a dynamic team where I can grow and 
             contribute as a DevOps professional.
           </p>
+
+          {/* Projects Section */}
+          <div className="mt-12">
+            <h3 className="text-2xl font-bold text-white mb-4">Projects</h3>
+
+            {/* Project 1 */}
+            <div className="mb-6">
+              <h4 className="text-xl font-semibold text-[#8245ec]">
+                DevSecOps Banking Application on AWS
+              </h4>
+              <p className="text-gray-400 mt-2">
+                Deployed a secure multi-tier banking app using Docker and Kubernetes on AWS EKS.
+                Integrated CI/CD with Jenkins, performed security scanning using OWASP ZAP and Trivy,
+                and used Terraform for infrastructure as code.
+              </p>
+              <a
+                href="https://github.com/anilsahu/devsecops-banking-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#8245ec] font-medium mt-2 inline-block hover:underline"
+              >
+                View on GitHub
+              </a>
+            </div>
+
+            {/* Project 2 */}
+            <div className="mb-6">
+              <h4 className="text-xl font-semibold text-[#8245ec]">
+                Multi-Environment IaC Deployment
+              </h4>
+              <p className="text-gray-400 mt-2">
+                Built reusable Terraform modules to provision infrastructure for multiple environments
+                (dev, staging, prod). Added Terratest automation to validate deployments and catch config issues early.
+              </p>
+              <a
+                href="https://github.com/anilsahu/iac-multi-env"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#8245ec] font-medium mt-2 inline-block hover:underline"
+              >
+                View on GitHub
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Right Side - Profile Image */}
