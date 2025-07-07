@@ -6,7 +6,7 @@ import profileImage from '../assets/Anil_photo.jpeg';
 const About = () => {
   const [text] = useTypewriter({
     words: ['DevOps Enthusiast', 'Cloud Learner'],
-    loop: 0,
+    loop: 0, // Infinite loop
     delaySpeed: 2000,
   });
 
@@ -47,15 +47,13 @@ const About = () => {
             {/* Project 1 */}
             <div className="mb-6">
               <h4 className="text-xl font-semibold text-[#8245ec]">
-                DevSecOps Banking Application on AWS
+              DevSecOps Banking Application on AWS
               </h4>
               <p className="text-gray-400 mt-2">
-                Deployed a secure multi-tier banking app using Docker and Kubernetes on AWS EKS.
-                Integrated CI/CD with Jenkins, performed security scanning using OWASP ZAP and Trivy,
-                and used Terraform for infrastructure as code.
+                A comprehensive DevSecOps pipeline integrating security scanning, CI/CD, and infrastructure automation using modern tools and best practices.
               </p>
               <a
-                href="https://github.com/anilsahu/devsecops-banking-app"
+                href="https://github.com/anilsahu350/DevOps-mega-project/tree/feature/devsecops"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#8245ec] font-medium mt-2 inline-block hover:underline"
@@ -67,14 +65,13 @@ const About = () => {
             {/* Project 2 */}
             <div className="mb-6">
               <h4 className="text-xl font-semibold text-[#8245ec]">
-                Multi-Environment IaC Deployment
+                Multi-Environment IaC Project
               </h4>
               <p className="text-gray-400 mt-2">
-                Built reusable Terraform modules to provision infrastructure for multiple environments
-                (dev, staging, prod). Added Terratest automation to validate deployments and catch config issues early.
+                Infrastructure as Code setup for multi-environment deployment using Terraform, enabling reusable modules and environment-specific configurations.
               </p>
               <a
-                href="https://github.com/anilsahu/iac-multi-env"
+                href="https://github.com/anilsahu350/Multi-env-lac-project"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#8245ec] font-medium mt-2 inline-block hover:underline"
